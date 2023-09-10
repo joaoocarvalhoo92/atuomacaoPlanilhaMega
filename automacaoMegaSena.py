@@ -37,7 +37,7 @@ data_apuracao = datetime.datetime.strptime(data_apuracao_str, "%d/%m/%Y").date()
 
 
 # Verifique se a data de apuração é menor que a data atual
-if data_apuracao <= data_atual:
+if data_apuracao < data_atual:
     # A data de apuração é anterior à data atual, o programa não continua
     print("A data de apuração é anterior à data atual. O programa não continua.")
     sys.exit()
